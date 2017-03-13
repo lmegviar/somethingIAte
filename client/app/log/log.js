@@ -9,7 +9,7 @@ angular.module('somthingIAte.log', [])
   $scope.putLog = function (logData) {
     Log.putLog(logData)
     .then(function() {
-      $state.go('/stats');
+      $location.path('/stats');
     })
     .catch(function (error) {
       console.error(error);
