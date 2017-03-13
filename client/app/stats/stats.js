@@ -8,7 +8,6 @@ angular.module('somthingIAte.stats', [])
   }
 
   var getStats = function () {
-    //TODO CREATE GET STATS
     Stats.getStats()
     .then(function(stats) {
       $scope.data.stats = stats;
