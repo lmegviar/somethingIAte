@@ -7,16 +7,16 @@ angular.module('somethingIAte', [
 ])
 
 .config(function ($routeProvider, $httpProvider) {
-  $urlRouteProvider.otherwise('/log');
-  $stateProvider
-    .state('log', {
+  $routeProvider
+    .when('/log', {
       templateUrl: 'app/log/log.html',
-      url: '/log',
       controller: 'LogController'
     })
-    .state('stats', {
+    .when('/stats', {
       templateUrl: 'app/stats/stats.html',
-      url: '/stats',
       controller: 'StatsController'
+    })
+    .otherwise({
+      redirectTo: '/log'
     })
 })
