@@ -1,0 +1,26 @@
+{
+  "name": "somthingIAte",
+  "version": "0.0.1",
+  "description": "Determine relationships between adverse symptoms and common trouble foods",
+  "author": "L. Meg Viar <lmegviar@gmail.com>",
+  "license": "UNLICENSED",
+  "private": false,
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "scripts": {
+    "start": "node server/server.js",
+    "start:es6": "node server/server.js"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "bluebird": "^3.3.4",
+    "body-parser": "^1.17.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "jwt-simple": "^0.5.1",
+    "mongoose": "^4.8.7",
+    "morgan": "^1.8.1",
+    "request": "^2.34.0"
+  }
+}
