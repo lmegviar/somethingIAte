@@ -7,10 +7,11 @@ var app = express();
 
 app.use(morgan('dev'));
 app.use(bodyParser.json());
-app.use(express.static(__dirname + '../client/app'));
+app.use(express.static(__dirname + '/../client/app'));
 
 require('./routes.js')(app, express);
 
 app.listen(3000);
+console.log('Server up and running!');
 
 module.exports = app;

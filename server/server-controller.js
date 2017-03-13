@@ -1,8 +1,4 @@
-var Record = require('../database/config.js');
-var crypto = require('crypto');
-var bcrypt = require('bcrypt-nodejs');
-var jwt = require('jwt-simple');
-
+// var Record = require('../database/config.js');
 exports.getStats = function(req, res) {
   console.log('Get stats ran!');
   stats =  {
