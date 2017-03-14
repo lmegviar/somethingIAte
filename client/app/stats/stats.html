@@ -4,7 +4,7 @@
   <div class="foodStats" ng-repeat="stat in data.stats.foods | orderBy: '-lastPhi'">
     <div class="statInfo">
       <div class="statName">{{stat.name}}</div>
-      <div class="phi">Phi Coefficient: {{stat.lastPhi}}</div>
+      <div class="phi">Phi Coefficient: {{(stat.lastPhi).toFixed(3)}}</div>
       <p>
     </div>
   </div>
