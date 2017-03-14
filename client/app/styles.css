@@ -465,6 +465,7 @@ template {
 title {
   font-family: 'Lato', sans-serif;
   font-weight: 900;
+
 }
 
 body {
@@ -478,4 +479,16 @@ h1 {
 
 h2 {
   font-family: 'Lato', sans-serif;
+}
+
+img {
+  width: 8em;
+  display: inline-block;
+  float: left;
+  padding: .2em;
+}
+
+.navigation {
+  padding-left: 7em;
+  padding-bottom: .5em;
 }

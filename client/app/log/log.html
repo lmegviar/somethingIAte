@@ -1,6 +1,7 @@
 <div id = 'logContainer'>
-<h1> Your Daily Log </h1>
-  <h2> Today I ate... </h2>
+<h2> Your Daily Log </h2>
+  <h3> Today I ate... </h3>
+  <form action="">
     <p>
       <input type="checkbox" name="foodAcheck" value="foodA">
       <label for="foodAcheck">Dairy</label>
@@ -21,12 +22,11 @@
       <input type="checkbox" name="foodEcheck" value="foodE">
       <label for="foodEcheck">Refined Sugar</label>
     </p>
-
-
-  <h2> Today I... </h2>
-  <form action="">
-    <input type="radio" name="symptoms" value="hadSymptoms">Had symptoms<br>
-    <input type="radio" name="symptoms" value="noSymptoms">Felt fine<br>
+  <h3> Today I... </h3>
+    <p>
+      <input type="checkbox" name="symptomsCheck" value="symptoms">
+      <label for="symptomsCheck">Experienced symptoms</label>
+    </p>
   </form>
   <p>
   <button type="button">Submit</button>
