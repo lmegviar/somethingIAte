@@ -8,6 +8,10 @@ var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error: '));
 db.once('open', function() {
   console.log('Something I Ate database is connected!')
+});
+
+module.exports = db;
+//create DemoData:
 //   var demoRecord = new Record ({
 //       username: 'demoUser',
 //       password: 'demoUser',
@@ -64,5 +68,3 @@ db.once('open', function() {
 //     }
 //   })
 // });
-
-module.exports = db;
