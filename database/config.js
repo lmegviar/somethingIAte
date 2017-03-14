@@ -52,20 +52,14 @@ var recordSchema = mongoose.Schema({
 
 var Record = mongoose.model('Record', recordSchema);
 
-var findPhi = function(food) {
-  return (food['10'] * food['00'] - food['10'] * food['01']) /
-    Math.sqrt((food['10'] + food['10']) *
-              (food['00'] + food['01']) *
-              (food['01'] + food['10']) *
-              (food['00'] + food['10']));
-};
 
-recordSchema.pre('save', function(next) {
-  this.foods.forEach( food => {
-  this.food.lastPhi = findPhi(food);
-  })
-  next();
-});
+
+// recordSchema.pre('save', function(next) {
+//   this.foods.forEach( food => {
+//   this.food.lastPhi = findPhi(food);
+//   })
+//   next();
+// });
 
 
 module.exports = Record;

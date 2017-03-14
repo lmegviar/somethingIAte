@@ -492,3 +492,7 @@ img {
   padding-left: 7em;
   padding-bottom: .5em;
 }
+
+.statName {
+  font-weight: bold;
+}

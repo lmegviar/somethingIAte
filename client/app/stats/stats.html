@@ -1,8 +1,12 @@
 <div id = 'statsContainer' ng-controller='StatsController'>
 <h2> Your Stats </h2>
-<h5> Most Associated With Your Symptoms </h5>
+<h5> How often have you been sick after eating these foods? </h5>
   <div class="foodStats" ng-repeat="stat in data.stats | orderBy: 'lastPhi'">
-    <div class="statInfo">{{stat.name}} : {{stat.lastPhi}}</div>
+    <div class="statInfo">
+      <div class="statName">{{stat.name}}</div>
+      <div class="phi">{{stat['0']}} times</div>
+      <p>
+    </div>
   </div>
-<h5> Least Associated With Your Symptoms </h5>
-</div>
+<!-- <h5> Least Associated With Your Symptoms </h5>
+ --></div>
