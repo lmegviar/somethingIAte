@@ -1,13 +1,19 @@
 angular.module('somethingIAte.factories', [])
 
-.factory('Log', function ($http) {
+.factory('Log', function ($http, $location) {
   var putLog = function (logData) {
     return $http({
       method: 'PUT',
       url: '/api/log',
       data: logData
     })
-    .catch(console.log);
+    .then(function() {
+      $location.path('/stats');
+      console.log('reroute to stats');
+    })
+    .catch(function (error) {
+      console.error(error);
+    });
   };
 
   return {

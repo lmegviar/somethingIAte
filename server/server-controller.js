@@ -8,7 +8,7 @@ exports.getStats = function(req, res) {
       console.error('Error:', err);
     }
   })
-  };
+};
 
 exports.putLog = function(req, res) {
   var foodA = req.body.foodAcheck;
@@ -19,6 +19,7 @@ exports.putLog = function(req, res) {
   var symptoms = req.body.symptoms
 
   if (symptoms) {
+    console.log('symptoms put log!')
     Record.findOne({username: 'demoUser'}, function(err, found) {
       if (err) {
         console.error(err)
@@ -46,6 +47,7 @@ exports.putLog = function(req, res) {
         }
       });
     }
+    res.send();
   };
 
 

@@ -1,6 +1,6 @@
 angular.module('somethingIAte.log', [])
 
-.controller('LogController', function ($scope, Log, $location) {
+.controller('LogController', function ($scope, Log, $location, $state) {
 
   $scope.foods = {
         foodAcheck: false,
@@ -16,11 +16,5 @@ angular.module('somethingIAte.log', [])
   $scope.putLog = function (logData) {
     console.log(JSON.stringify($scope.foods));
     Log.putLog($scope.foods)
-    .then(function() {
-      $location.path('/stats');
-    })
-    .catch(function (error) {
-      console.error(error);
-    });
   };
 });
