@@ -2,12 +2,20 @@ angular.module('somethingIAte.log', [])
 
 .controller('LogController', function ($scope, Log, $location) {
 
-  // $scope.signout = function() {
-  //   Users.signout();
-  // }
+  $scope.foods = {
+        foodAcheck: false,
+        foodBcheck: false,
+        foodCcheck: false,
+        foodDcheck: false,
+        foodEcheck: false,
+        symptons: false
+    };
+
+  $scope.checkList = {};
 
   $scope.putLog = function (logData) {
-    Log.putLog(logData)
+    console.log(JSON.stringify($scope.foods));
+    Log.putLog($scope.foods)
     .then(function() {
       $location.path('/stats');
     })

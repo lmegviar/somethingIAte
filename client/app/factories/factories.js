@@ -1,10 +1,11 @@
 angular.module('somethingIAte.factories', [])
 
 .factory('Log', function ($http) {
-  var putLog = function () {
+  var putLog = function (logData) {
     return $http({
       method: 'PUT',
-      url: '/api/log'
+      url: '/api/log',
+      data: logData
     })
     .catch(console.log);
   };

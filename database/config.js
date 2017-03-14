@@ -1,6 +1,5 @@
 var mongoose = require('mongoose');
 var db = require('./dbConnect');
-var crypto = require('crypto');
 
 // SCHEMAS
 var recordSchema = mongoose.Schema({
@@ -9,44 +8,41 @@ var recordSchema = mongoose.Schema({
   lastLogin: {type: Date, default: Date.now},
   daysLogged: Number,
   foods: [
-    {
-      foodA: [{
+      {
         00: Number,
         01: Number,
         10: Number,
         11: Number,
         lastPhi: Number
-      }],
-      foodB: [{
+      },
+      {
         00: Number,
         01: Number,
         10: Number,
         11: Number,
         lastPhi: Number
-      }],
-      foodC: [{
+      },
+      {
         00: Number,
         01: Number,
         10: Number,
         11: Number,
         lastPhi: Number
-      }],
-      foodD: [{
+      },
+      {
         00: Number,
         01: Number,
         10: Number,
         11: Number,
         lastPhi: Number
-      }],
-      foodE: [{
+      },
+      {
         00: Number,
         01: Number,
         10: Number,
         11: Number,
         lastPhi: Number
       }]
-    }
-  ]
 });
 
 var Record = mongoose.model('Record', recordSchema);

@@ -20,8 +20,9 @@ exports.getStats = function(req, res) {
         }]
       }]
     }
+    res.send(stats);
   };
 
 exports.putLog = function(req, res) {
-  console.log('Put log ran!')
+  console.log(req.body);
 };
