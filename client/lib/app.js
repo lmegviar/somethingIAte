@@ -1,7 +1,7 @@
-angular.module('somethingIAte', ['ngRoute'
-  // 'somethingIAte.factories',
-  // 'somethingIAte.log',
-  // 'somethingIAte.stats'
+angular.module('somethingIAte', ['ngRoute',
+  'somethingIAte.factories',
+  'somethingIAte.log',
+  'somethingIAte.stats'
 ])
 
 .config(function ($routeProvider, $httpProvider) {

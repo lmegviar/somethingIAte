@@ -1,4 +1,4 @@
-angular.module('somethingIAte.services', [])
+angular.module('somethingIAte.factories', [])
 
 .factory('Log', function ($http) {
   var putLog = function () {

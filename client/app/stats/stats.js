@@ -1,4 +1,4 @@
-angular.module('somthingIAte.stats', [])
+angular.module('somethingIAte.stats', [])
 
 .controller('StatsController', function ($scope, Stats, Users, $location) {
   $scope.data = {};

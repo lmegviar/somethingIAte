@@ -1,4 +1,4 @@
-angular.module('somthingIAte.log', [])
+angular.module('somethingIAte.log', [])
 
 .controller('LogController', function ($scope, Log, Users, $location) {
 

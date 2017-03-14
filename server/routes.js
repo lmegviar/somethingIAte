@@ -2,7 +2,11 @@ var serverController = require('./server-controller.js');
 var express = require('express')
 
 module.exports = function (app, express) {
-  app.put('/log', serverController.putLog);
-  app.put('/', serverController.putLog);
-  app.get('/stats', serverController.getStats);
+  app.put('/api/log', serverController.putLog);
+  app.get('/api/stats', serverController.getStats);
+  // app.all('/*', function (req, res) {
+  //   res.sendfile('index.html', {
+  //     root: __dirname + '/../client'
+  //   });
+  // })
 };
