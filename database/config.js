@@ -13,35 +13,40 @@ var recordSchema = mongoose.Schema({
         01: Number,
         10: Number,
         11: Number,
-        lastPhi: Number
+        lastPhi: Number,
+        name: String
       },
       {
         00: Number,
         01: Number,
         10: Number,
         11: Number,
-        lastPhi: Number
+        lastPhi: Number,
+        name: String
       },
       {
         00: Number,
         01: Number,
         10: Number,
         11: Number,
-        lastPhi: Number
+        lastPhi: Number,
+        name: String
       },
       {
         00: Number,
         01: Number,
         10: Number,
         11: Number,
-        lastPhi: Number
+        lastPhi: Number,
+        name: String
       },
       {
         00: Number,
         01: Number,
         10: Number,
         11: Number,
-        lastPhi: Number
+        lastPhi: Number,
+        name: String
       }]
 });
 

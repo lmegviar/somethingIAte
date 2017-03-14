@@ -22,8 +22,8 @@ angular.module('somethingIAte.factories', [])
       url: '/api/stats'
     })
     .then(function (resp) {
-      return resp.data;
-      console.log('Get stats resp.data: ', resp.data);
+      return resp.data.foods;
+      console.log('Get stats resp.data: ', resp.data.foods);
     })
     .catch(console.log);
   };

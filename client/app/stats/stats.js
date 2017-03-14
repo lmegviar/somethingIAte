@@ -15,5 +15,6 @@ angular.module('somethingIAte.stats', [])
   };
   getStats();
 
+
 });
 
