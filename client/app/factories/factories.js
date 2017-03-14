@@ -23,6 +23,7 @@ angular.module('somethingIAte.factories', [])
     })
     .then(function (resp) {
       return resp.data;
+      console.log('Get stats resp.data: ', resp.data);
     })
     .catch(console.log);
   };

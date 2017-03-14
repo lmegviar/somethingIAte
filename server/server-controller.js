@@ -1,26 +1,13 @@
-// var Record = require('../database/config.js');
+var Record = require('../database/config.js');
 exports.getStats = function(req, res) {
   console.log('Get stats ran!');
-  stats =  {
-    foods: [{
-        foodA: [{
-          lastPhi: 1.2
-        }],
-        foodB: [{
-          lastPhi: 0.6
-        }],
-        foodC: [{
-          lastPhi: 0.1
-        }],
-        foodD: [{
-          lastPhi: 2
-        }],
-        foodE: [{
-          lastPhi: 0.5
-        }]
-      }]
+  Record.findOne({username: 'demo'}).exec(function(err, found) {
+    if(found) {
+      res.status(200).send(found);
+    } else {
+      console.error('Error:', err);
     }
-    res.send(stats);
+  })
   };
 
 exports.putLog = function(req, res) {
