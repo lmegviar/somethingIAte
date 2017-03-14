@@ -8,16 +8,20 @@
 
   </head>
   <body>
+  <div class="appBody">
+    <div class="header">
       <img src='./assets/ateLogo.png'>
-      <div><h1>Something I Ate</h1></div>
+      <h1>Something I Ate</h1>
       <div class='navigation'>
         <ul>
-          <li><a ui-sref="log" class='logLink'>Log My Day</a></li>
-          <li><a ui-sref="stats" class='statLink'>See My Stats</a></li>
-          <li><a ui-sref="customize" class='customizeLink'>Customize Log</a></li>
+          <li><a ui-sref="log" class='logLink'>Log</a></li>
+          <li><a ui-sref="stats" class='statLink'>Stats</a></li>
+          <li><a ui-sref="customize" class='customizeLink'>Customize</a></li>
         </ul>
       </div>
+    </div>
     <div class="view" ui-view></div>
+  </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
     <script src="log/log.js"></script>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,900|Merriweather|Merriweather+Sans');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,600,900|Merriweather|Merriweather+Sans');
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 
@@ -475,6 +475,8 @@ body {
 
 h1 {
   font-family: 'Lato', sans-serif;
+  margin-bottom: .3em;
+  text-align: center;
 }
 
 h2 {
@@ -482,22 +484,78 @@ h2 {
 }
 
 img {
+  margin-top: -1.3em;
   width: 9em;
   display: inline-block;
   float: left;
-  padding: .2em;
-}
-
-.navigation {
-  padding-left: 8.1em;
-  padding-bottom: .5em;
+  padding-right: .2em;
 }
 
 .statName {
   font-weight: bold;
 }
 
+.navigation ul li {
+  display: inline-block;
+}
+
+.navigation ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
 .view {
   padding-left: 1em;
 }
 
+body {
+  background-color: #3399ff;
+}
+.appBody {
+  margin: 4em auto;
+  background-color: white;
+    padding: 2em;
+    width: 25em;
+    border-radius: 2em;
+    box-shadow: -0.8em 0.8em 2em 0px hsla(80, 0%, 0%, 0.5);
+}
+
+.navigation {
+    text-align: center;
+    background-color: #ddd;
+    overflow: hidden;
+    border-radius: 2em;
+}
+
+.navigation a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    display: block;
+    color: #555;
+    padding: 12px 12px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navigation a:hover {
+    background-color: #3399ff;
+    color: black;
+}
+
+.navigation a.active {
+    background-color: #4CAF50;
+    color: black;
+}
+
+.header:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.phi {
+  color: grey;
+  font-size: 12px;
+  margin-top: .6em;
+}
