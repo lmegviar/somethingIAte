@@ -12,8 +12,9 @@
     <div><h1>Something I Ate</h1></div>
     <div class='navigation'>
       <ul>
-        <li><a ui-sref="log" class='index'>Log My Day</a></li>
-        <li><a ui-sref="stats" class='create'>See My Stats</a></li>
+        <li><a ui-sref="log" class='logLink'>Log My Day</a></li>
+        <li><a ui-sref="stats" class='statLink'>See My Stats</a></li>
+        <li><a ui-sref="customize" class='customizeLink'>Customize Log</a></li>
       </ul>
     </div>
     <div ui-view></div>
@@ -22,6 +23,7 @@
     <script src="log/log.js"></script>
     <script src="stats/stats.js"></script>
     <script src="factories/factories.js"></script>
+    <script src="customize/customize.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

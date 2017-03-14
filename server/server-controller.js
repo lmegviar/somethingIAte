@@ -123,6 +123,36 @@ exports.putLog = function(req, res) {
     res.send();
   };
 
+//-----------customizeLog
+exports.customizeLog = function(req, res) {
+  var foodA = req.body.foodAcheck;
+  var foodB = req.body.foodBcheck;
+  var foodC = req.body.foodCcheck;
+  var foodD = req.body.foodDcheck;
+  var foodE = req.body.foodEcheck;
+  var symptoms = req.body.symptoms
+
+  if (symptoms) {
+    console.log('symptoms put log!')
+    Record.findOne({username: 'demoUser'}, function(err, found) {
+      if (err) {
+        console.error(err)
+      } else {
+          found.foods[0]['name'] = foodA;
+          found.foods[1]['name'] = foodB;
+          found.foods[2]['name'] = foodC;
+          found.foods[3]['name'] = foodD;
+          found.foods[4]['name'] = foodE;
+          found.save(function (err){
+            if (err) {
+              console.error(err);
+            }
+          })
+        }
+      });
+    }
+    res.send();
+  };
 
 
 

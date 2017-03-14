@@ -4,23 +4,23 @@
 <!--   <form action=""> -->
     <p></p>
       <input type="checkbox" ng-model="foods.foodAcheck">
-      <label for="foodAcheck">Dairy</label>
+      <label for="foodAcheck">{{data.stats[0].name}}</label>
     </p>
     <p>
       <input type="checkbox" ng-model="foods.foodBcheck">
-      <label for="foodBcheck">Soy</label>
+      <label for="foodBcheck">{{data.stats[1].name}}</label>
     </p>
     <p>
       <input type="checkbox" ng-model="foods.foodCcheck">
-      <label for="foodCcheck">Peanuts</label>
+      <label for="foodCcheck">{{data.stats[2].name}}</label>
     </p>
     <p>
       <input type="checkbox" ng-model="foods.foodDcheck">
-      <label for="foodDcheck">Refined Flour</label>
+      <label for="foodDcheck">{{data.stats[3].name}}</label>
     </p>
     <p>
       <input type="checkbox" ng-model="foods.foodEcheck">
-      <label for="foodEcheck">Refined Sugar</label>
+      <label for="foodEcheck">{{data.stats[4].name}}</label>
     </p>
   <h3> Today I... </h3>
     <p>

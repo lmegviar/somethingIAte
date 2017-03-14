@@ -9,7 +9,6 @@ angular.module('somethingIAte.factories', [])
     })
     .then(function() {
       $location.path('/stats');
-      console.log('reroute to stats');
     })
     .catch(function (error) {
       console.error(error);
@@ -18,6 +17,26 @@ angular.module('somethingIAte.factories', [])
 
   return {
     putLog: putLog
+  };
+})
+
+.factory('Customize', function ($http, $location) {
+  var customizeLog = function (custom) {
+    return $http({
+      method: 'PUT',
+      url: '/api/customize',
+      data: custom
+    })
+    .then(function() {
+      $location.path('/log');
+    })
+    .catch(function (error) {
+      console.error(error);
+    });
+  };
+
+  return {
+    customizeLog: customizeLog,
   };
 })
 

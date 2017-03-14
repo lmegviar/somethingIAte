@@ -1,6 +1,7 @@
 angular.module('somethingIAte', ['ui.router',
   'somethingIAte.factories',
   'somethingIAte.log',
+  'somethingIAte.customize',
   'somethingIAte.stats'
 ])
 
@@ -14,10 +15,11 @@ angular.module('somethingIAte', ['ui.router',
       url: '/stats',
       templateUrl: './stats/stats.html',
     })
+    .state('customize', {
+      url: '/customize',
+      templateUrl: './customize/customize.html',
+    })
 
     $locationProvider.html5Mode(true);
 })
 
-.run(function () {
-//necessary?
-})
