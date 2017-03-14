@@ -20,7 +20,6 @@ angular.module('somethingIAte.log', [])
     Stats.getStats()
     .then(function(stats) {
       $scope.data.stats = stats;
-      console.log('stats: ', stats);
     })
     .catch(function (error) {
       console.error(error);

@@ -1,7 +1,7 @@
 <div id = 'statsContainer' ng-controller='StatsController'>
 <h2> Your Stats </h2>
 <h4> Ranked from most to least likely culprit: </h4>
-  <div class="foodStats" ng-repeat="stat in data.stats | orderBy: '-lastPhi'">
+  <div class="foodStats" ng-repeat="stat in data.stats.foods | orderBy: '-lastPhi'">
     <div class="statInfo">
       <div class="statName">{{stat.name}}</div>
       <div class="phi">Phi Coefficient: {{stat.lastPhi}}</div>

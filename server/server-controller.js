@@ -1,6 +1,5 @@
 var Record = require('../database/config.js');
 exports.getStats = function(req, res) {
-  console.log('Get stats ran!');
   Record.findOne({username: 'demoUser'}).exec(function(err, found) {
     if(found) {
       res.status(200).send(found);

@@ -4,28 +4,28 @@
 <!--   <form action=""> -->
     <p></p>
       <input type="checkbox" ng-model="foods.foodAcheck">
-      <label for="foodAcheck">{{data.stats[0].name}}</label>
+      <label for="foodAcheck">{{data.stats.foods[0].name}}</label>
     </p>
     <p>
       <input type="checkbox" ng-model="foods.foodBcheck">
-      <label for="foodBcheck">{{data.stats[1].name}}</label>
+      <label for="foodBcheck">{{data.stats.foods[1].name}}</label>
     </p>
     <p>
       <input type="checkbox" ng-model="foods.foodCcheck">
-      <label for="foodCcheck">{{data.stats[2].name}}</label>
+      <label for="foodCcheck">{{data.stats.foods[2].name}}</label>
     </p>
     <p>
       <input type="checkbox" ng-model="foods.foodDcheck">
-      <label for="foodDcheck">{{data.stats[3].name}}</label>
+      <label for="foodDcheck">{{data.stats.foods[3].name}}</label>
     </p>
     <p>
       <input type="checkbox" ng-model="foods.foodEcheck">
-      <label for="foodEcheck">{{data.stats[4].name}}</label>
+      <label for="foodEcheck">{{data.stats.foods[4].name}}</label>
     </p>
-  <h3> Today I... </h3>
+  <h3> Today I Experienced... </h3>
     <p>
       <input type="checkbox" ng-model="foods.symptoms">
-      <label for="symptomsCheck">Experienced symptoms</label>
+      <label for="symptomsCheck">{{data.stats.symptom}}</label>
     </p>
   <button type="button" ng-click="putLog();">Submit</button>
 <!--   </form> -->

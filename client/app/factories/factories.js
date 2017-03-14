@@ -47,8 +47,7 @@ angular.module('somethingIAte.factories', [])
       url: '/api/stats'
     })
     .then(function (resp) {
-      return resp.data.foods;
-      console.log('Get stats resp.data: ', resp.data.foods);
+      return resp.data;
     })
     .catch(console.log);
   };

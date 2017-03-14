@@ -7,6 +7,7 @@ var recordSchema = mongoose.Schema({
   password: { type: String, required: true },
   lastLogin: {type: Date, default: Date.now},
   daysLogged: Number,
+  symptom: String,
   foods: [
       {
         00: Number,
