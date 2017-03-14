@@ -1,17 +1,33 @@
 <div id = 'logContainer'>
 <h1> Your Daily Log </h1>
   <h2> Today I ate... </h2>
-    <ul>
-      <li>Dairy</li>
-      <li>Soy</li>
-      <li>Refined Flour</li>
-      <li>Refined Sugar</li>
-      <li>Peanuts</li>
-    </ul>
+    <p>
+      <input type="checkbox" name="foodAcheck" value="foodA">
+      <label for="foodAcheck">Dairy</label>
+    </p>
+    <p>
+      <input type="checkbox" name="foodBcheck" value="foodB">
+      <label for="foodBcheck">Soy</label>
+    </p>
+    <p>
+      <input type="checkbox" name="foodCcheck" value="foodC">
+      <label for="foodCcheck">Peanuts</label>
+    </p>
+    <p>
+      <input type="checkbox" name="foodDcheck" value="foodD">
+      <label for="foodDcheck">Refined Flour</label>
+    </p>
+    <p>
+      <input type="checkbox" name="foodEcheck" value="foodE">
+      <label for="foodEcheck">Refined Sugar</label>
+    </p>
+
+
   <h2> Today I... </h2>
-    <ul>
-      <li>Experienced negative symptoms</li>
-      <li>Felt fine!</li>
-    </ul>
+  <form action="">
+    <input type="radio" name="symptoms" value="hadSymptoms">Had symptoms<br>
+    <input type="radio" name="symptoms" value="noSymptoms">Felt fine<br>
+  </form>
+  <p>
   <button type="button">Submit</button>
 </div>

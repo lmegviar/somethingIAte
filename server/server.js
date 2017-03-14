@@ -12,8 +12,7 @@ app.use(express.static(path.join(__dirname, '../client/app')));
 
 require('./routes.js')(app, express);
 
-app.listen(process.env.PORT, function () {
-// app.listen(3000, function () {
+app.listen(process.env.PORT || 3000, function () {
   console.log('Server up and running!');
 });
 
