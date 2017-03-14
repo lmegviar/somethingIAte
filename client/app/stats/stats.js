@@ -1,11 +1,11 @@
 angular.module('somethingIAte.stats', [])
 
-.controller('StatsController', function ($scope, Stats, Users, $location) {
+.controller('StatsController', function ($scope, Stats, $location) {
   $scope.data = {};
 
-  $scope.signout = function() {
-    Users.signout();
-  }
+  // $scope.signout = function() {
+  //   Users.signout();
+  // }
 
   var getStats = function () {
     Stats.getStats()

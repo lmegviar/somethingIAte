@@ -1,10 +1,10 @@
 angular.module('somethingIAte.log', [])
 
-.controller('LogController', function ($scope, Log, Users, $location) {
+.controller('LogController', function ($scope, Log, $location) {
 
-  $scope.signout = function() {
-    Users.signout();
-  }
+  // $scope.signout = function() {
+  //   Users.signout();
+  // }
 
   $scope.putLog = function (logData) {
     Log.putLog(logData)
