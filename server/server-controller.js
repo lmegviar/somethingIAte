@@ -118,7 +118,6 @@ exports.putLog = function(req, res) {
         }
       });
     }
-
     res.send();
   };
 
@@ -131,8 +130,6 @@ exports.customizeLog = function(req, res) {
   var foodE = req.body.foodEcheck;
   var symptoms = req.body.symptoms
 
-  if (symptoms) {
-    console.log('symptoms put log!')
     Record.findOne({username: 'demoUser'}, function(err, found) {
       if (err) {
         console.error(err)
@@ -142,6 +139,38 @@ exports.customizeLog = function(req, res) {
           found.foods[2]['name'] = foodC;
           found.foods[3]['name'] = foodD;
           found.foods[4]['name'] = foodE;
+          found.symptom = symptoms;
+          found.foods[0]['name'] = foodA;
+          found.foods[1]['name'] = foodB;
+          found.foods[2]['name'] = foodC;
+          found.foods[3]['name'] = foodD;
+          found.foods[4]['name'] = foodE;
+          found.foods[0]['0'] = 0;
+          found.foods[0]['1'] = 0;
+          found.foods[0]['10'] = 0;
+          found.foods[0]['11'] = 0;
+          found.foods[0]['lastPhi'] = 0;
+          found.foods[1]['0'] = 0;
+          found.foods[1]['1'] = 0;
+          found.foods[1]['10'] = 0;
+          found.foods[1]['11'] = 0;
+          found.foods[1]['lastPhi'] = 0;
+          found.foods[2]['0'] = 0;
+          found.foods[2]['1'] = 0;
+          found.foods[2]['10'] = 0;
+          found.foods[2]['11'] = 0;
+          found.foods[2]['lastPhi'] = 0;
+          found.foods[3]['0'] = 0;
+          found.foods[3]['1'] = 0;
+          found.foods[3]['10'] = 0;
+          found.foods[3]['11'] = 0;
+          found.foods[3]['lastPhi'] = 0;
+          found.foods[4]['0'] = 0;
+          found.foods[4]['1'] = 0;
+          found.foods[4]['10'] = 0;
+          found.foods[4]['11'] = 0;
+          found.foods[4]['lastPhi'] = 0;
+
           found.save(function (err){
             if (err) {
               console.error(err);
@@ -149,8 +178,7 @@ exports.customizeLog = function(req, res) {
           })
         }
       });
-    }
-    res.send();
+    res.end();
   };
 
 

@@ -11,7 +11,7 @@ angular.module('somethingIAte.customize', [])
         symptoms: 'Main Symptom'
     };
 
-  $scope.customizeLog = function (customData) {
+  $scope.customizeLog = function () {
     Customize.customizeLog($scope.custom)
   };
 });

@@ -28,7 +28,7 @@ angular.module('somethingIAte.factories', [])
       data: custom
     })
     .then(function() {
-      $location.path('/log');
+      $location.path('/');
     })
     .catch(function (error) {
       console.error(error);
