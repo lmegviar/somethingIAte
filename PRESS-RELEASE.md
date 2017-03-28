@@ -8,7 +8,7 @@ Problem
 Elimination diets take time and commitment. Even with careful adherance, it can be difficult to determine which foods, if any, are truly to blame for one's symptoms.
 
 Solution
-Something I Ate allows the user to simply track their diet and occurance of symptoms and determines correlations, without the need for extensive avoidance of any one food group.
+Something I Ate allows the user to simply track their diet and occurence of symptoms and determines correlations, without the need for extensive avoidance of any one food group.
 
 "Something I Ate allows you to keep a flexible diet while helping you to identify potential problem foods."
 
