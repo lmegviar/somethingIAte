@@ -1,5 +1,5 @@
 # somethingIAte
-A hassle-free alternative to elimination diets
+#### A hassle-free alternative to elimination diets
 
 "Something I Ate allows you to keep a flexible diet while helping you to identify potential problem foods."
 
@@ -17,7 +17,8 @@ which foods, if any, are truly to blame for one's symptoms.
 Something I Ate allows the user to simply track their diet and occurence of symptoms and determines 
 correlations, without the need for extensive avoidance of any one food group.
 
-### How to Get Started Simply login to Something I Ate at the end of each day and record whether or not you experienced 
+### How to Get Started 
+Simply login to Something I Ate at the end of each day and record whether or not you experienced 
 any negative symptoms and check off the potentially problematic food groups you ate from that day. That's it! Over time, 
 Something I Ate will continue to update your stats, providing an increasingly accurate anaylsis of which foods are most 
 associated with your negative symptoms.
