@@ -25,3 +25,7 @@ associated with your negative symptoms.
 
 Ready to give Something I Ate a try? Go to something-I-ate.herokuapp.com to sign up and get started! Remember, the more 
 days you log, the more accurate our analysis will be. So, get started today and figure out...was it something you ate?
+
+### Running Locally
+Fork this repo and clone it to your local machine. Be sure to have MongoDB installed. Run 'npm install' to set up dependencies. 
+
