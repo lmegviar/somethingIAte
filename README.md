@@ -30,7 +30,8 @@ days you log, the more accurate our analysis will be. So, get started today and 
 Fork this repo and clone it to your local machine. Be sure to have MongoDB installed. Run 'npm install' to set up dependencies. 
 
 ### Screenshots 
-![screen shot 2017-05-15 at 3 21 57 pm](https://cloud.githubusercontent.com/assets/23217560/26075239/9206050e-3982-11e7-9202-3010d44be1ec.png)
+
+<img src="https://cloud.githubusercontent.com/assets/23217560/26075239/9206050e-3982-11e7-9202-3010d44be1ec.png" width="300"/>
 
 ![screen shot 2017-05-15 at 3 22 10 pm](https://cloud.githubusercontent.com/assets/23217560/26075242/940d915a-3982-11e7-9ea2-ab9f835d796e.png)
 
