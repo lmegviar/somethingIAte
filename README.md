@@ -31,8 +31,8 @@ Fork this repo and clone it to your local machine. Be sure to have MongoDB insta
 
 ### Screenshots 
 
-<img src="https://cloud.githubusercontent.com/assets/23217560/26075239/9206050e-3982-11e7-9202-3010d44be1ec.png" width="500"/>
+<img src="https://cloud.githubusercontent.com/assets/23217560/26075239/9206050e-3982-11e7-9202-3010d44be1ec.png" width="425"/>
 
-<img src="https://cloud.githubusercontent.com/assets/23217560/26075242/940d915a-3982-11e7-9ea2-ab9f835d796e.png" width="500"/>
+<img src="https://cloud.githubusercontent.com/assets/23217560/26075242/940d915a-3982-11e7-9ea2-ab9f835d796e.png" width="425"/>
 
-<img src="https://cloud.githubusercontent.com/assets/23217560/26075248/96d0d032-3982-11e7-8417-4914e6ac06b6.png" width="500"/>
+<img src="https://cloud.githubusercontent.com/assets/23217560/26075248/96d0d032-3982-11e7-8417-4914e6ac06b6.png" width="425"/>
